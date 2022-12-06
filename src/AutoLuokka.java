@@ -15,6 +15,11 @@ public class AutoLuokka {
 		// Kiihdytetään autolla ja tulostetaan tiedot uudestaan
 		auto1.kiihdyta();
 		auto1.naytaTiedot();
+		
+		// Tankataan auto ja tulostetaan tiedot uudestaan
+		auto1.tankkaa(5);
+		auto1.naytaTiedot();
+
 
 	}
 
@@ -39,7 +44,12 @@ class Auto {
 		}
 		else { System.out.println("Tankki tyhjä. Käy tankkaamassa, että voit kaasutella!"); }
 	}
-
+	public void tankkaa(int tankkaus) {
+		System.out.println("Tankissa bensaa: " + bensanMaara);
+		System.out.println("Tankkaus: " + tankkaus);
+		bensanMaara = bensanMaara + tankkaus;
+		System.out.println("Tankissa bensaa tankkauksen jälkeen: " + bensanMaara);
+	}
 	public void naytaTiedot() {
 		System.out.println("Auton merkki: " + merkki);
 		System.out.println("Auton malli: " + malli);
