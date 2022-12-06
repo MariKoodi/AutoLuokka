@@ -19,7 +19,10 @@ public class AutoLuokka {
 		// Tankataan auto ja tulostetaan tiedot uudestaan
 		auto1.tankkaa(5);
 		auto1.naytaTiedot();
-
+		
+		// Käytetään konstruktoria (3 parametria) ja tulostetaan sen tiedot
+		Auto auto2 = new Auto("Toyota", "Corolla", 3);
+		auto2.naytaTiedot();
 
 	}
 
@@ -33,6 +36,14 @@ class Auto {
 	public String malli;
 	public int bensanMaara;
 	
+	// Konstruktorit
+	public Auto() {}
+	public Auto(String merkki, String malli, int bensanMaara) {
+		this.merkki = merkki;
+		this.malli = malli;
+		this.bensanMaara = bensanMaara;
+	}
+
 	// Metodit
 	public void jarruta() {
 		System.out.println("Auto jarruttaa");
