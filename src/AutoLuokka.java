@@ -11,6 +11,11 @@ public class AutoLuokka {
 		
 		// Tulostetaan auton tiedot
 		auto1.naytaTiedot();
+		
+		// Kiihdytetään autolla ja tulostetaan tiedot uudestaan
+		auto1.kiihdyta();
+		auto1.naytaTiedot();
+
 	}
 
 } // Main-luokan lopetus
